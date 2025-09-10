@@ -1,0 +1,68 @@
+.categories-container {
+  padding: 40px 20px;
+  background: black;
+  color: white;
+  min-height: 100vh;
+}
+
+.categories-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.category-button {
+  display: block;
+  width: 100%;
+  background-color: #1c1c1c;
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  margin: 10px 0;
+  text-align: left;
+  border: 1px solid #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #e91e63;
+  color: white;
+}
+
+.subcategory-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.subcategory-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.subcategory-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.explore-button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Raleway', sans-serif;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+.home-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Background image only in hero section */
+.hero-section {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px 60px;
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/123/791/685/titan-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* dark overlay */
+  z-index: 1;
+}
+
+/* Make sure text appears above overlay */
+.hero-title,
+.hero-subtitle,
+.search-bar {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ddd;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.search-bar {
+  padding: 12px 20px;
+  width: 300px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.search-bar::placeholder {
+  color: #ccc;
+}
+
+/* Product section */
+.products-section {
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 2;
+  position: relative;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #fff;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #ccc;
+}

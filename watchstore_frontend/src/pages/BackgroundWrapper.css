@@ -1,0 +1,7 @@
+.page-background {
+  min-height: 100vh;
+  background-image: url('https://thehardcopy.co/wp-content/uploads/Sonata-scaled.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
